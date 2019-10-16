@@ -1,4 +1,4 @@
-module https: //github.com/michalkelcik/excelize/v2
+module github.com/michalkelcik/excelize/v2
 
 go 1.12
 
