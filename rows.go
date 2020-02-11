@@ -203,9 +203,8 @@ func (f *File) sharedStringsReader() *xlsxSST {
 // inteded to be used with for range on rows an argument with the xlsx opened
 // file.
 func (xlsx *xlsxC) getValueFrom(f *File, d *xlsxSST) (string, error) {
-
 	// if no value is defined for cell, and cell is still present in definition file, return empty string
-	if xlsx.V == "" {
+	if xlsx.V == "" && xlsx.T == "" {
 		return "", nil
 	}
 
